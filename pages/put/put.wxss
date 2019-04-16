@@ -1,0 +1,41 @@
+/*背景样式*/
+.form_box {
+  background-color: #f5f5dc;
+  margin:20rpx;
+  height:100%;
+}
+/*输入框样式*/
+.form_box input {
+  border:3rpx solid #c0c0c0; 
+  border-radius:10rpx;
+  height: 60rpx;
+}
+/*名称、人数、类别__view*/
+.box {
+  padding:25rpx 10rpx;
+  display:flex;  
+  flex-direction:row;
+}
+/*描述 地点*/
+.box_2 {
+  padding:20rpx 10rpx;
+}
+textarea {
+  margin:1em;
+  border:3rpx solid #c0c0c0; 
+  border-radius:10rpx;
+  height: 150rpx;
+  width:80%;
+}
+/*类别*/
+picker {
+  border:3rpx solid #c0c0c0; 
+  border-radius:10rpx;
+  height: 60rpx;
+  width:150rpx;
+  text-align: center;
+}
+/*按钮*/
+button {
+  width:70%;
+}

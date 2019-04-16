@@ -1,0 +1,9 @@
+<view>
+  <!--导入地图-->
+  <map longitude="113.324520" 
+       latitude="23.099994" 
+       markers="{{markers}}">
+  </map>
+  <!--广告-->
+  
+</view>

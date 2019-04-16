@@ -1,0 +1,21 @@
+/*tap导航栏的样式*/
+.scroll-box {
+  white-space: nowrap;
+  background-color: #999999;
+}
+.box {
+  display:inline-block;
+  margin: 10rpx 50rpx;
+  font-size: 15px;
+}
+/*tap导航栏选中时的样式*/
+.selected {
+  color:blue;
+  padding:10rpx;
+  border-bottom:2px solid blue;
+  
+}
+/*tap导航栏未选中时的样式*/
+.noselected {
+  color:black;
+}

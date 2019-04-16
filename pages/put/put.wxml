@@ -1,0 +1,44 @@
+<view class="form_box" >
+<form bindsubmit="formSubmit">
+  <!--活动名字-->
+  <view class='box'>
+    <text>活动名称：</text>
+    <input name='act_name'></input>
+  </view>
+  <!--活动类别-->
+  <view class='box'>
+    <text>活动类别：</text>
+    <picker mode = selector
+            range='{{range}}'
+            value="{{range[index]}}"
+            bindchange="changeRange"
+            name='act_type'>
+       {{range[index]}}
+    </picker>
+  </view>
+   <!--活动简单描述-->
+  <view class="box_2">
+    <text>活动描述：</text>
+    <textarea placeholder='请对活动进行简单描述' name='act_describe'></textarea>
+  </view>
+   <!--活动人数-->
+  <view  class='box'>
+    <text>活动人数：</text>
+    <input style="width:150rpx;" type="number" name='act_number' ></input>
+  </view>
+   <!--活动时间-->
+  <view  class='box'>
+    <text>活动时间：</text>
+    <input type="number" name='act_time' ></input>
+  </view>
+  <!--活动地点-->
+  <view name='act_site' class="box_2">
+    <text>活动地点：</text>
+    <textarea placeholder='请输入活动地点' name='act_site'></textarea>
+  </view>
+  <!--按钮-->
+  <view style="padding-bottom:20rpx">
+    <button formType="submit" type='primary'>发布内容</button>
+  </view>
+</form>
+</view>

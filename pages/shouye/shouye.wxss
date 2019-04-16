@@ -1,0 +1,6 @@
+/*地图样式*/
+map {
+  width:100%;
+  height:700rpx;
+  display: flex;
+}

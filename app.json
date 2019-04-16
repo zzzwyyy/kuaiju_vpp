@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/search/search",
+      "pages/shouye/shouye",
+      "pages/put/put",
+     
+      "pages/mine/mine"
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/shouye/shouye",
+      "text": "首页"
+    },{
+      "pagePath": "pages/put/put",
+      "text": "发布活动"
+    },{
+      "pagePath": "pages/search/search",
+      "text": "参加活动"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "个人中心"
+    }],
+     "selectedColor":"#FF6347",
+     "color": "#8B4513"
+  }
+}
