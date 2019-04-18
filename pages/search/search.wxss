@@ -19,3 +19,18 @@
 .noselected {
   color:black;
 }
+/*主页内容样式*/
+.content_box {
+  background-color:#f5f5dc;
+  height:100%; 
+  margin:10rpx;
+}
+/*每一个消息的样式*/
+.message_box {
+  border:1.5rpx solid black;
+  border-radius:10rpx;
+  margin:25rpx;
+  padding:10rpx;
+  font-size: 15px;
+  background:rgba(255,255,255,0.5);
+}

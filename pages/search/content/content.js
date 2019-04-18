@@ -4,12 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    user_name:"王某",
-    user_sex:"女",
-    user_teleNum:'123344',
-    /*user_join*/
-    /*user_take*/
-    user_credit:'100'
+    
   },
 
   /**
