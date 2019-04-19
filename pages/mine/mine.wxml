@@ -1,31 +1,16 @@
-<!--显示页面的内容-->
-<view class="box" id='oldData_box' style="display:{{oldData}}">
-<form>
-  <view class="content_box">
-    <view>用户名 :</view>
-    <text>{{user_name}}</text>
+<view>
+  <!--可以修改的信息-->
+  <view>
+    <view>姓名：王蓥蓥</view> 
+    <view>vip:0</view>
+    <view>信誉分：100分</view>
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <open-data type='userAvatarUrl'></open-data>
+    <button open-type='getUserInfo'>获取权限</button>
+    <!--不可修改的信息-->
+    <view>参加过的活动</view>
+    <view>发起过的活动</view>
   </view>
-  <view class="content_box sex">
-    <view>性别 :</view>
-    <text>{{user_sex}}</text>
-  </view>
-  <view class="content_box">
-    <view>信誉分:</view>
-    <text>{{user_credit}}</text>
-  </view>
-  <view class="content_box">
-    <view>手机号 :</view>
-    <text>{{user_teleNum}}</text>
-  </view>
-  <view class="content_box">
-    <view bindtap="userJoin">参加过的活动</view>
-    <!-- <text>{{user_join}}</text>-->
-  </view>
-  <view class="content_box">
-    <view bindtap="userJoin">发起过的活动</view>
-    <!-- <text>{{user_take}}</text>-->
-  </view>
-  <button style='margin-top:50rpx;' type="primary" bindtap="dataChange">更改信息</button>
-</form>
+  <!--修改信息按钮-->
+  <button>更改信息</button>
 </view>
-
