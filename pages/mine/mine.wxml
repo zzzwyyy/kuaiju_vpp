@@ -1,16 +1,55 @@
-<view>
-  <!--可以修改的信息-->
+<view class="box"  style='display:{{oldData}}'>
   <view>
-    <view>姓名：王蓥蓥</view> 
-    <view>vip:0</view>
-    <view>信誉分：100分</view>
-    <image src="{{userInfo.avatarUrl}}"></image>
-    <open-data type='userAvatarUrl'></open-data>
-    <button open-type='getUserInfo'>获取权限</button>
-    <!--不可修改的信息-->
-    <view>参加过的活动</view>
-    <view>发起过的活动</view>
+    <!--头像-->
+    <view class="avatar_box">
+      <view class='avatar' >
+        <open-data type='userAvatarUrl'></open-data>
+      </view>
+      <button open-type='getUserInfo' style="display:none">获取权限</button>
+    </view>
+     <!--信誉分、vip-->
+    <view style='display:flex;flex-diretion:row;justify-content:center;'>
+      <view class='font' style='margin-right:30rpx;'>信誉分：{{user_credit}}分</view>
+      <view class='font'>vip:{{user_vip}}</view>
+    </view>
+    <!--消息-->
+    <view class="content_box">
+     <view style="font-weight:bold">{{user_name}}</view>
+     <view>{{user_sex}}</view>
+     <view>{{user_teleNum}}</view>
+      <view class='act_box'> - 参加过的活动  - </view>
+      <view class='act_box'> -  发起过的活动  - </view>
+    </view>
   </view>
   <!--修改信息按钮-->
-  <button>更改信息</button>
+  <button type='primary' style='width:500rpx;margin-top:100rpx' bindtap="changeMessage">更改信息</button>
 </view>
+
+<!--隐藏的内容-->
+<view class="box" style='display:{{newData}}'>
+  <view>
+    <!--头像-->
+    <view class="avatar_box">
+      <view class='avatar' >
+        <open-data type='userAvatarUrl'></open-data>
+      </view>
+      <button open-type='getUserInfo' style="display:none">获取权限</button>
+    </view>
+     <!--信誉分、vip-->
+    <view style='display:flex;flex-diretion:row;justify-content:center;'>
+      <view class='font' style='margin-right:30rpx;'>信誉分：{{user_credit}}分</view>
+      <view class='font'>vip:{{user_vip}}</view>
+    </view>
+    <!--消息-->
+    <view class="content_box">
+     <input placeholder='请填入姓名'></input>
+     <input placeholder='请填入性别'></input>
+     <input placeholder='请填入电话号码'></input>
+      <view class='act_box'> - 参加过的活动  - </view>
+      <view class='act_box'> -  发起过的活动  - </view>
+    </view>
+  </view>
+  <!--保存信息按钮-->
+  <button type='primary' style='width:500rpx;margin-top:100rpx'>保存信息</button>
+</view>
+

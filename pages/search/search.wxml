@@ -1,4 +1,4 @@
-<view class="content_box "> 
+<view class="content_box"> 
    <!--头部导航栏tap-->
   <scroll-view scroll-x class="scroll-box">
      <view wx:for="{{items}}" wx:key="index" class="box" >

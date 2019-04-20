@@ -4,9 +4,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo:{
-      avatarUrl:'userInfo.avatarUrl',  //用户头像
-    }
+      user_name:'王蓥蓥',
+      user_vip:0,
+      user_credit:100,
+      user_sex:'女',
+      user_teleNum:18659023135,
+      newData:'none',
+      oldData:''
   },
 
   /**
@@ -63,5 +67,12 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  /*点击更改信息按钮*/
+  changeMessage:function() {
+     this.setData({
+       oldData:'none',
+       newData:''
+     })
   }
 })
