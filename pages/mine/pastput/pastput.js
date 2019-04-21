@@ -4,14 +4,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-      user_name:'王蓥蓥',
-      user_vip:0,
-      user_credit:100,
-      user_sex:'女',
-      user_teleNum:18659023135,
-      newData:'none',
-      oldData:'',
-      userNewInfo:{}
+    list: [],
+    act_name: "西邮篮球赛",
+    act_describe: "西安邮电大学的一场刺激的篮球赛",
+    act_time: "2016.07.18.14:00",
+    act_site: "西邮",
   },
 
   /**
@@ -68,31 +65,5 @@ Page({
    */
   onShareAppMessage: function () {
     
-  },
-  /*点击更改信息按钮*/
-  changeMessage:function() {
-     this.setData({
-       oldData:'none',
-       newData:''
-     })
-  },
-  /*获取用户更改的信息*/
-  changeData:function(e) {
-    let { user_name, user_sex, user_teleNum } = e.detail.value;
-    if (!user_name || !user_sex || !user_teleNum ) {
-      wx.showModal({
-        title: '警告',
-        content: '请完善信息',
-      }) }
-    else {
-      this.setData({
-        userNewInfo: {
-          user_name,
-          user_sex,
-          user_teleNum
-          }
-      })
-      console.log(this.data.userNewInfo);
-    }
- }
+  }
 })

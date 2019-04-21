@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/put/put",
+    "pages/mine/pastput/pastput",
+    "pages/mine/jioned/jioned",
     "pages/mine/mine",
+    "pages/put/put",
     "pages/Search/content/content",
     "pages/Search/search",
     "pages/shouye/shouye"
