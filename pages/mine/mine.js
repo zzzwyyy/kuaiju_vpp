@@ -10,7 +10,8 @@ Page({
       user_sex:'女',
       user_teleNum:18659023135,
       newData:'none',
-      oldData:''
+      oldData:'',
+      userNewInfo:{}
   },
 
   /**
@@ -74,5 +75,25 @@ Page({
        oldData:'none',
        newData:''
      })
-  }
+  },
+  /*获取用户更改的信息*/
+  changeData:function(e) {
+    let { user_name, user_sex, user_teleNum } = e.detail.value;
+    if (!user_name || !user_sex || !user_teleNum ) {
+      wx.showModal({
+        title: '警告',
+        content: '请完善信息',
+      }) }
+    else {
+      this.setData({
+        userNewInfo: {
+          user_name,
+          user_sex,
+          user_teleNum
+          }
+      })
+      console.log(this.data.userNewInfo)
+    }
+    
+ }
 })

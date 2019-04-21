@@ -26,6 +26,7 @@
 </view>
 
 <!--隐藏的内容-->
+<form bindsubmit='changeData'>
 <view class="box" style='display:{{newData}}'>
   <view>
     <!--头像-->
@@ -42,14 +43,15 @@
     </view>
     <!--消息-->
     <view class="content_box">
-     <input placeholder='请填入姓名'></input>
-     <input placeholder='请填入性别'></input>
-     <input placeholder='请填入电话号码'></input>
+     <input placeholder='请填入姓名' name="user_name"></input>
+     <input placeholder='请填入性别' name="user_sex"></input>
+     <input placeholder='请填入电话号码' name="user_teleNum"></input>
       <view class='act_box'> - 参加过的活动  - </view>
       <view class='act_box'> -  发起过的活动  - </view>
     </view>
   </view>
   <!--保存信息按钮-->
-  <button type='primary' style='width:500rpx;margin-top:100rpx'>保存信息</button>
+  <button type='primary' style='width:500rpx;margin-top:100rpx' form-type='submit'>保存信息</button>
 </view>
+</form>
 

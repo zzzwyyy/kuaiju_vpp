@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/put/put",
     "pages/mine/mine",
     "pages/Search/content/content",
     "pages/Search/search",
-    "pages/shouye/shouye",
-    "pages/put/put"
+    "pages/shouye/shouye"
   ],
   "tabBar": {
     "list": [{
